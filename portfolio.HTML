@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neel | Full Stack Developer</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="bg-grid"></div>
+
+    <header>
+        <div class="header-content">
+            <h1>Hello, I'm <span class="gradient-text">Neel</span></h1>
+            <p class="subtitle">Building the future with Code & AI</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about" class="glass-panel">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a 2nd-year Computer Science student passionate about 
+                        <strong>Full Stack Development</strong> and <strong>AI Automation</strong>.
+                    </p>
+                    <p>
+                        I specialize in building scalable web applications and integrating AI agents 
+                        to solve real-world problems. My goal is to merge creativity with engineering 
+                        to craft seamless digital experiences.
+                    </p>
+                    <div class="status-badge" id="resume-trigger" style="cursor: pointer;">
+                        <span class="dot"></span> Open to Work
+                    </div>
+                </div>
+
+                <div class="orbit-container">
+                    <div class="profile-center">
+                        <img src="my img.jpg" alt="Neel">
+                    </div>
+
+                    <div class="orbit ring-1">
+                        <a href="https://github.com/Neel578" target="_blank" class="orbit-item" style="--i:0">
+                            <img src="https://www.svgrepo.com/show/475654/github-color.svg" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/neel-ahir-b58505326/" target="_blank" class="orbit-item" style="--i:1">
+                            <img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="mailto:your-email@example.com" class="orbit-item" style="--i:2">
+                            <img src="https://www.svgrepo.com/show/452213/gmail.svg" alt="Email">
+                        </a>
+                    </div>
+
+                    <div class="orbit ring-2">
+                        <div class="orbit-item" style="--i:0">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                        </div>
+                        <div class="orbit-item" style="--i:1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                        </div>
+                        <div class="orbit-item" style="--i:2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+                        </div>
+                        <div class="orbit-item" style="--i:3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        </div>
+                    </div>
+
+                    <div class="orbit ring-3">
+                        <div class="orbit-item" style="--i:0">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                        </div>
+                        <div class="orbit-item" style="--i:1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="JSON">
+                        </div>
+                        <div class="orbit-item" style="--i:2">
+                            <img src="N8N.png" alt="N8N">
+                        </div>
+                        <div class="orbit-item" style="--i:3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                        </div>
+                        <div class="orbit-item" style="--i:4">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Selected Works</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="ai_contentcreator.avif" alt="AI Content Project">
+                    </div>
+                    <div class="card-content">
+                        <h3>AI Content Automation</h3>
+                        <p>A sophisticated tool that leverages LLMs to generate high-quality marketing copy for social media platforms automatically.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>OpenAI API</span>
+                            <span>N8N</span>
+                        </div>
+                        <button onclick="window.location.href='content.html'" class="btn-primary">View Case Study</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="html,car.png" alt="Ahir Motors">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ahir Motors Showroom</h3>
+                        <p>An immersive frontend experience for a luxury car showroom featuring 3D-like interactions and smooth GSAP animations.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <button onclick="window.location.href='car.html'" class="btn-primary">Visit Website</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="card-content">
+                        <h3>Life Tracker App</h3>
+                        <p>A productivity application designed to track daily habits and visualize personal growth metrics over time.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <button onclick="window.location.href='#'" class="btn-primary">View Demo</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="certificates" class="certificates-section">
+            <h2 class="section-title">Certifications</h2>
+            
+            <div class="cert-grid">
+                
+                <div class="cert-card">
+                    <div class="cert-img-box">
+                        <img src="cert-ai.jpg" alt="NPTEL AI Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Artificial Intelligence</h3>
+                        <p class="issuer">Issued by: NPTEL</p>
+                        <span class="date">Nov 2025</span>
+                        <a href="#" class="btn-primary" style="display:inline-block; margin-top:10px;">View Credential</a>
+                    </div>
+                </div>
+        
+                <div class="cert-card">
+                    <div class="cert-img-box">
+                        <img src="cert-python.jpg" alt="Python Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Python Programming</h3>
+                        <p class="issuer">Issued by: Coursera</p>
+                        <span class="date">Dec 2025</span>
+                        <a href="#" class="btn-primary" style="display:inline-block; margin-top:10px;">View Credential</a>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Let's Build Something Together</h3>
+            <div class="social-row">
+                <a href="https://linkedin.com" target="_blank"><img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LI"></a>
+                <a href="https://instagram.com" target="_blank"><img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="IG"></a>
+                <a href="https://youtube.com" target="_blank"><img src="https://www.svgrepo.com/show/475692/youtube-color.svg" alt="YT"></a>
+            </div>
+            <p class="copyright">© <span id="current-year"></span> Neel Ahir. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top">↑</button>
+
+    <div id="resume-modal" class="resume-overlay">
+        <button id="close-resume-btn">← Back to Portfolio</button>
+        <iframe src="Untitled (1).pdf" title="My Resume"></iframe>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
