@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         });
     });
 
@@ -17,7 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     backToTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
 
     // 3. Set Current Year
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+    const yearElem = document.getElementById('current-year');
+    if (yearElem) {
+        yearElem.textContent = new Date().getFullYear();
+    }
 
     // 4. RESUME MODAL LOGIC (Back Button Support)
     const resumeTrigger = document.getElementById('resume-trigger');
@@ -38,12 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
         resumeModal.classList.remove('active'); // Start Fade Out
         document.body.style.overflow = 'auto'; // Restore scrolling
         
-        // Remove the hash (#resume) from URL nicely if it exists
         if(window.location.hash === "#resume") {
-            // If we closed it manually, we might want to go back in history 
-            // to remove the hash, OR just replace state to clean URL.
-            // But since the user might have clicked "Back", we let the popstate handle it usually.
-            // If this was triggered by button, we force history back.
+            // history.back() is handled by the user pressing back, 
+            // but if we close manually we typically just let the state sit or replace it.
         }
     }
 
@@ -57,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Trigger: Close Button (simulates back button)
     if (closeResumeBtn) {
         closeResumeBtn.addEventListener('click', () => {
-            history.back(); // This triggers 'popstate' event
+            history.back(); // This triggers 'popstate' event below
         });
     }
 
